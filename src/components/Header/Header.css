@@ -1,0 +1,43 @@
+.header__companyName{
+    font-weight: bold ;
+    padding: 3px;
+    margin: 2px;
+    font-size: 1.2rem;
+    color: #000;
+}
+/* 
+.header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+} */
+
+.header__leftItem{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    object-fit: contain;
+    width: 30px;   
+}
+.product-types{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.product-types button{
+    background-color: #fff;
+    padding: 0px 5px;
+    margin: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    font-size: 18px;
+    
+}
+.product-types button :hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    
+}
