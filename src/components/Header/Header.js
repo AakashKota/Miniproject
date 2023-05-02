@@ -20,7 +20,7 @@ function Header() {
       <Menu stackable>
         <Menu.Menu position="left">
           <Menu.Item>
-            <Link to="/" className="header__leftItem">
+            <Link to="/" style={{ textDecoration: 'none' }} className="header__leftItem">
               <img
                 className="header__logo"
                 src="https://img.icons8.com/ios/100/000000/online-shop-favorite.png"
@@ -32,18 +32,18 @@ function Header() {
         </Menu.Menu>
         <Menu.Menu position="right">
           {/* <AdminOnlyRoute> */}
-          <Link to="/uploadImage">
+          <Link to="/uploadImage" style={{ textDecoration: 'none' }}>
             <Menu.Item>
               <Icon name="upload" /> Add product
             </Menu.Item>
           </Link>
           {/* </AdminOnlyRoute> */}
-          <Link to="/checkout">
+          <Link to="/checkout" style={{ textDecoration: 'none' }}>
             <Menu.Item>
               <Icon name="shop" /> {basket?.length}
             </Menu.Item>
           </Link>
-          <Link to="/login">
+          <Link to="/login" style={{ textDecoration: 'none' }}>
             <Menu.Item>
               {user ? (
                 <div onClick={login}>
